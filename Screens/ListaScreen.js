@@ -11,7 +11,7 @@ import {
 
 
 export default function Lista({ navigation }) {
-
+    
     const [contatos, setContatos] = useState([]);
 
     useEffect(() => {

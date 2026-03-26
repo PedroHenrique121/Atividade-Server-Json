@@ -5,32 +5,57 @@
       "nome": "Teste",
       "email": "p@gmail.com",
       "senha": "1"
+    },
+    {
+      "nome": "amanda",
+      "cpf": "543367987",
+      "email": "amanda@gmail",
+      "senha": "12345678",
+      "id": "Ve5T7_VgGZM"
+    },
+    {
+      "nome": "pedro",
+      "cpf": "35987654398",
+      "email": "pedro@gmail.com",
+      "senha": "12345678",
+      "id": "gF2vwYr_d8o"
+    },
+    {
+      "nome": "34234",
+      "cpf": "234234",
+      "email": "njr1466@gmail.com",
+      "senha": "a123456",
+      "id": "DlMafNmBTbI"
     }
   ],
   "contatos": [
     {
-      "id": "1",
-      "nome": "John Doe",
-      "cpf": "123.123.789-00",
-      "numero": "123456789"
+      "nome": " Tacielly gomes da silva",
+      "telefone": "98765432",
+      "email": "atgs@discente.ifpe.edu.br",
+      "id": "j4--WdGAy_8"
     },
     {
-      "id": "2",
-      "nome": "Jane Smith",
-      "cpf": "123.456.789-00",
-      "numero": "987654234441"
+      "usuario_id": 1,
+      "nome": "Amanda Tacielly gomes da silva",
+      "telefone": "98765432",
+      "email": "atgs@discente.ifpe.edu.br",
+      "id": "j4--WdGAy_8"
     },
     {
-      "id": "3",
-      "nome": "Pedro Silva",
-      "cpf": "234.567.890-12",
-      "numero": "998877665"
+      "usuario_id": 1,
+      "nome": "nilson candido",
+      "telefone": "456785345678",
+      "email": "nilson@gmail.com",
+      "id": "1TpYjBgUXT0"
     },
     {
-      "id": "4",
-      "nome": "Maria Oliveira",
-      "cpf": "345.678.901-23",
-      "numero": "987654321"
+      "usuario_id": 1,
+      "nome": "123",
+      "telefone": "213",
+      "email": "12312",
+      "id": "Z77KWGDSrTk"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
