@@ -15,30 +15,30 @@ export default function Login({ navigation }) {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
 
-    async function logar() {
-        try {
-            if (!email || !senha) {
-                alert('Preencha email e senha');
-                return;
-            }
-
-            axios.get(`http://localhost:3000/usuarios?email=${email}&senha=${senha}`)
-                .then(function (response) {
-                    if (response.data.length > 0) {
-                        navigation.navigate('Lista');
-                    } else {
-                        alert('Email ou senha inválidos');
-                    }
-                }).catch(function (error) {
-                    console.log(error);
-                    alert('Erro ao conectar à API');
-                });
-
-        } catch (error) {
-            console.log('Erro ao logar:', error.message);
-            alert('Erro', 'Não foi possível conectar à API');
-        }
+   async function logar() {
+    if (!email || !senha) {
+        alert('Preencha email e senha');
+        return;
     }
+
+    try {
+        const response = await axios.get('http://localhost:3000/usuarios');
+        
+   
+        const usuario = response.data.find(
+            u => u.email === email.trim() && u.senha === senha.trim()
+        );
+
+        if (usuario) {
+            navigation.navigate('Lista');
+        } else {
+            alert('Email ou senha inválidos');
+        }
+    } catch (error) {
+        console.log(error);
+        alert('Erro ao conectar à API');
+    }
+}
 
     return (
         <View style={styles.container}>

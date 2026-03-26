@@ -1,0 +1,36 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Teste",
+      "email": "p@gmail.com",
+      "senha": "1"
+    }
+  ],
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "John Doe",
+      "cpf": "123.123.789-00",
+      "numero": "123456789"
+    },
+    {
+      "id": "2",
+      "nome": "Jane Smith",
+      "cpf": "123.456.789-00",
+      "numero": "987654234441"
+    },
+    {
+      "id": "3",
+      "nome": "Pedro Silva",
+      "cpf": "234.567.890-12",
+      "numero": "998877665"
+    },
+    {
+      "id": "4",
+      "nome": "Maria Oliveira",
+      "cpf": "345.678.901-23",
+      "numero": "987654321"
+    }
+  ]
+}
